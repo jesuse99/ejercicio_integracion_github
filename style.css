@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #010100;
+    font-family: monospace;
+}
+
+.section-header {
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.title {
+    text-decoration: none;
+    color: white;
+}
+
+.list-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.link-nav {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+.section-main {
+    flex: 1;
+}
+
+.section-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: dodgerblue;
+    color: white;
+    text-transform: uppercase;
+}
