@@ -11,9 +11,20 @@
 <body>
 
     <header class="section-header">
+        <div class="nav">
         <a class="title" href="index.html">
             <h1>Ejercicio Github</h1>
         </a>
+
+        <a class="button-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </a>
+        </div>
+
         <nav class="navbar">
             <ul class="list-nav">
                 <li><a class="link-nav" href="index.html">Inicio</a></li>
@@ -23,18 +34,18 @@
     </header>
     <main class="section-main">
         <div class="card-text">
-            <h2>Chiste de pepe</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, dolores?</p>
+            <h2 class="title-chiste">Chiste N1</h2>
+            <p class="text-chiste"></p>
         </div>
         <div class="card-button">
-            <button type="button" class="button-previous">
+            <button type="button" class="button-previous" onclick="dec()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                         d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
                 </svg>
                 Anterior</button>
-            <button type="button" class="button-forward">
+            <button type="button" class="button-forward" onclick="inc()">
                 Siguiente
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
@@ -48,7 +59,7 @@
         <p>Ejercicio integracion Github</p>
     </footer>
 
-
+    <script src="main.js"></script>
 </body>
 
 </html>
