@@ -1,20 +1,16 @@
-const listNav = document.querySelector(".navbar");
-
+const listNav = document.querySelector(".list-nav");
 const buttonMenu = document.querySelector(".button-menu");
-buttonMenu.addEventListener('click', function() {
-    console.log(listNav.style.display);
-
+buttonMenu.addEventListener('click', function () {
     if (listNav.style.display == "none") {
-        listNav.style.display = "block";    
+        listNav.style.display = "flex";
     } else {
         listNav.style.display = "none";
     }
 });
 
-const titleChiste = document.querySelector(".title-chiste");
-const textChiste = document.querySelector(".text-chiste");
-
-listChistes = [
+const titleJoke = document.querySelector(".title-joke");
+const textJoke = document.querySelector(".text-joke");
+listJokes = [
     '¿Sabes por qué no se puede discutir con un DJ? Porque siempre están cambiando de tema.',
     '¿Cómo se dice pañuelo en japonés? Saka-moko.',
     '¿Cómo se dice disparo en árabe? Ahí-va-la-bala.',
@@ -32,17 +28,17 @@ update();
 
 function inc() {
     c++;
-    if (c > 9) c=0;
+    if (c > 9) c = 0;
     update();
 }
 
 function dec() {
     c--;
-    if (c < 0) c=9;
+    if (c < 0) c = 9;
     update();
 }
 
 function update() {
-    titleChiste.textContent = "Chiste N"+(c+1);
-    textChiste.textContent = listChistes[c];
+    titleJoke.textContent = "Chiste N" + (c + 1);
+    textJoke.textContent = listJokes[c];
 }
